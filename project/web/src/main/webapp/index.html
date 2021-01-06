@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Station Controller Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Station Controller Home</h1>
+
+        <div>
+            <img src="../projectfacadeweb/images/gate.jpg" alt="London Underground Gate" style="width:415px;height:300px;">
+        </div>
+
+        <h2>Station Configuration Service</h2>
+                <!-- http://localhost:8080/projectfacadeweb/stationList.jsp -->
+        <a href="../projectfacadeweb/stationList.jsp">Station Manager</a>
+        <BR>
+        <BR>
+        <a href="../projectfacadeweb/pricingScheduleManager.jsp">Pricing Schedule Manager</a>
+        </p>
+
+        <h2>Rest End Points</h2>
+        <table>
+            <tr><td>GET station config note you must supply uuid of machine</td><td><a href="../projectfacadeweb/rest/stationService/getTicketMachineConfig?uuid=xxx">http://localhost:8080/projectfacadeweb/rest/stationService/getTicketMachineConfig?uuid=xxx</a> </td></tr>
+            <tr><td>GET simple test message </td><td><a href="../projectfacadeweb/rest/stationService/">http://localhost:8080/projectfacadeweb/rest/stationService</a> </td></tr>
+        </table>
+
+    </body>
+</html>
